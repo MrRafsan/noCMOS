@@ -16,7 +16,7 @@ try:
 	minute = currentDT.minute
 
 	month = datetime.date(1900, monthinteger, 1).strftime('%B')
-	#it will print april
+
 
 #	subprocess.call(shlex.split("timedatectl set-ntp false"))  # May be necessary if time does not change.
 	subprocess.call(shlex.split(f"sudo date -s '{day} {month} {year} {hour}:{minute}:00'"))
